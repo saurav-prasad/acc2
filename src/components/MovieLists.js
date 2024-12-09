@@ -15,17 +15,17 @@ function MovieLists({ movies, filterData }) {
     return (
         <>
 
-            <div class="relative overflow-x-auto shadow-md  movielist">
-                <table class="w-full text-sm text-left rtl:text-right text-gray-900">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-200 ">
+            <div className="relative overflow-x-auto shadow-md  movielist">
+                <table className="w-full text-sm text-left rtl:text-right text-gray-900">
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-200 ">
                         <tr>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" className="px-6 py-3">
                                 Title
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" className="px-6 py-3">
                                 Genre
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            <th scope="col" className="px-6 py-3">
                                 Year
                             </th>
                         </tr>
@@ -34,14 +34,14 @@ function MovieLists({ movies, filterData }) {
                         {
                             data.map((e, i) =>
 
-                                <tr class="bg-white border-b" key={i}>
-                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r">
+                                <tr className="bg-white border-b" key={i}>
+                                    <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap border-r">
                                         {e.title}
                                     </th>
-                                    <td class="px-6 py-4 text-gray-900 border-r">
+                                    <td className="px-6 py-4 text-gray-900 border-r">
                                         {e.genre}
                                     </td>
-                                    <td class="px-6 py-4 text-gray-900">
+                                    <td className="px-6 py-4 text-gray-900">
                                         {e.year}
                                     </td>
                                 </tr>
